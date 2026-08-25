@@ -14,6 +14,7 @@ body{
     height: 130px;
     display: flex;
     justify-content: space-between;
+    gap: 14px;
 }
 
 .nav-apps{
@@ -26,19 +27,105 @@ body{
 
 
 .nav-title{
-    width: 120px;
-    height: 150px;
-    background-image:url("logo1.svg");
+    width: 100px;
+    height: 120px;
+    background-image:url("images/logo1.svg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+
 .hero-section{
     width: 100%;
     max-height: 60dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
-.hero-section h1{
-    text-align: center;
-    font-size: 60px;
+.hero-cmmnt{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+}
+
+.hero-cmmnt h1{
+    margin-top: 10px;
+    margin-left: 40px;
+    font-size: 50px;
+    width: 400px;
+    font-weight: lighter;
+}
+
+.hero-cmmnt span{
+    font-size: 100px;
+}
+
+.hero-group{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-image1{
+    position: absolute;
+    left: 38%;
+    height: 500px;
+    width: 300px;
+    background-image: url("images/coffee-cup.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: drop-shadow(10px 15px 20px rgba(0, 0, 0, 1));
+    transform: rotate(-18deg);
+    transition: transform 0.3s ease;
+    z-index: 2;
+}
+
+.hero-image2{
+    margin-top: 100px;
+    padding: 2px;
+    position: absolute;
+    left: 38%;
+    height: 300px;
+    width: 450px;
+    background-image: url("images/beans.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: drop-shadow(10px 15px 20px rgba(0, 0, 0, 1));
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+
+.hero-group:hover .hero-image1{
+    transform: rotate(-10deg) scale(1.1);
+}
+
+.hero-group:hover .hero-image2{
+    transform: scale(1.1);
+}
+
+.button{
+    position: absolute;
+    display: flex;
+    gap: 25px;
+    margin-top: 300px;
+    margin-left: 40px;
+}
+
+.button a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.btn{
+    padding: 8px 16px;
+    background-color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+.btn:hover{
+    transform: translateY(-5px);
 }
