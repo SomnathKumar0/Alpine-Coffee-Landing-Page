@@ -2,4 +2,7 @@
 Dark-themed responsive coffee shop landing page made using HTML/CSS, built from scratch as a portfolio project.
 
 ## Status
-There is much work left and updates will be listed as the project proceeds.
+- Hero section with headline, CTA buttons, and product animation
+- More features coming soon
+
+Work in progress — updates will be added as the project proceeds.
